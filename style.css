@@ -1,0 +1,101 @@
+body {
+    background-color: #FFF7F0;
+    color: #030303;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+#logo img {
+    width: 64px;
+    aspect-ratio: 1;
+}
+
+#call-to-action {
+    background-color: #030303;
+    color: #FFF7F0;
+    text-decoration: none;
+    padding: 14px 45px;
+    border-radius: 1000px;
+}
+
+.text-content {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 56px;
+    margin-block-end: 22px;
+}
+
+.text-content p {
+    color: #7A746E;
+}
+
+.image-container {
+    display: flex;
+    gap: 24px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.image-container a {
+    aspect-ratio: 4 / 5;
+    flex-basis: 100%;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 354px;
+    height: 500px;
+    display: grid;
+}
+
+#imagen1 {
+    background-color: rgb(131, 108, 169);
+}
+
+#imagen2 {
+    background-color: rgb(193, 88, 88);
+}
+
+#imagen3 {
+    background-color: cyan;
+}
+
+h2 {
+    color: white;
+    justify-self: end;
+    align-self: end;
+}
+
+
+#img1 {
+    width: 128px;
+    height: 192px;
+    grid-column: 3;
+    justify-self: end;
+    margin: 30px;
+}
+
+#img2 {
+    width: 230px;
+    height: 115px;
+    grid-column: 3;
+    justify-self: end;
+    margin: 30px;
+}
+
+#img3 {
+    width: 87px;
+    height: 217px;
+    grid-column: 3;
+    justify-self: end;
+    margin: 30px;
+}
