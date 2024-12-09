@@ -14,7 +14,7 @@ nav {
 }
 
 #logo img {
-    width: 4rem;
+    max-width: 4rem;
     aspect-ratio: 1;
 }
 
@@ -32,7 +32,7 @@ nav {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
     margin-block-end: 1.5rem;
 }
 
@@ -69,7 +69,8 @@ h1 {
     background-color: cyan;
 }
 
-h2 {
+
+.image-container h2 {
     color: white;
     justify-self: end;
     align-self: end;
@@ -77,30 +78,30 @@ h2 {
 
 
 #img1 {
-    width: 8rem;
-    height: 12rem;
+    max-width: 8rem;
+    max-height: 12rem;
     grid-column: 3;
     justify-self: end;
     margin: 2rem;
 }
 
 #img2 {
-    width: 14.4rem;
-    height: 7.2rem;
+    max-width: 12rem;
+    max-height: 7.2rem;
     grid-column: 3;
     justify-self: end;
     margin: 2rem;
 }
 
 #img3 {
-    width: 5.5rem;
-    height: 13.6rem;
+    max-width: 5.5rem;
+    max-height: 13.6rem;
     grid-column: 3;
     justify-self: end;
     margin: 2rem;
 }
 
-.section2{
+.section2 {
     display: flex;
     align-items: center;
     margin-top: 6.25rem;
@@ -109,28 +110,103 @@ h2 {
     margin-left: 9.4rem;
 }
 
-#circulo{
-    width: 27.9rem;
-    height: 27.9rem;
+#circulo {
+    max-width: 27.9rem;
+    max-height: 27.9rem;
 }
 
-.section2_2 h3{
+.section2_2 h3 {
     font-size: 2.5rem;
 }
 
-.section2_2 p{
+.section2_2 p {
     font-size: 1.2rem;
 }
 
-.section2_2{
+.section2_2 {
     padding-inline-start: 12.5rem;
 }
 
-.section2_2 button{
+.section2_2 button {
     background-color: rgb(193, 88, 88);
     border-radius: 1.8rem;
-    padding-block:  1.2rem;
+    padding-block: 1.2rem;
     padding-inline: 3.2rem;
     color: white;
     border-color: rgb(193, 88, 88);
+}
+
+#work {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.carrete {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 3rem;
+}
+
+@media (width < 1400px) {
+    .image-container {
+        justify-content: center;
+        display: grid;
+    }
+
+    .image-container a {
+        width: 22.2rem;
+        height: 31.2rem;
+        flex-basis: 100%;
+        aspect-ratio: 4/5;
+    }
+}
+
+@media (width < 1400px) {
+    .carrete {
+        display: grid;
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        justify-items: center;
+    }
+
+    .carrete img{
+      margin-block: 1rem;  
+    }
+
+}
+
+@media (width < 1000px) {
+    #circulo {
+        max-width: 13.9rem;
+        max-height: 13.9rem;
+    }
+
+    .section2{
+        display: flex;
+    align-items: start;
+    margin-inline: 0;
+    }
+
+    .section2_2{
+        padding-inline-start: 0;
+    }
+
+    .section2_2 p{
+        font-size: 0.8rem;
+    }
+
+    .section2_2 h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media  (width < 700px){
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        align-items: center;
+    }
 }
