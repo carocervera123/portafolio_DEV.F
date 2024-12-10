@@ -1,7 +1,31 @@
+:root{
+    --clr-violet: #755CDE;
+    --clr-orange: #F6A560;
+    --clr-pink: #F39E9E;
+    --clr-red: #EB7565;
+    --clr-blue: #61C4B7;
+    --clr-purple: #552049;
+    --clr-black: #030303;
+    --clr-gray: #7A746E;
+    --clr-white: #FFF7F0;
+    --clr-letter: black; 
+
+    --fs-body: "Plus Jakarta Sans", sans-serif bold;
+
+    --fsz-l: 3.5rem;
+    --fsz-m: 2.5rem;
+    --fsz-s: 2rem;
+
+
+    --fsw-l: 4.375rem;
+    --fsw-m: 3.1875rem;
+    --fsw-s: 2.5rem;
+}
+
 body {
-    background-color: #FFF7F0;
-    color: #030303;
-    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: var(--clr-white);
+    color: var(--clr-letter);
+    font-family: var(--fs-body);
 }
 
 nav {
@@ -19,8 +43,8 @@ nav {
 }
 
 #call-to-action {
-    background-color: #030303;
-    color: #FFF7F0;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
     text-decoration: none;
     padding: 1rem 2.8rem;
     border-radius: 62.5rem;
@@ -32,12 +56,13 @@ nav {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: var(--fsz-l);
+    font-weight: var(--fsw-l);
     margin-block-end: 1.5rem;
 }
 
 .text-content p {
-    color: #7A746E;
+    color: var(--clr-gray);
 }
 
 .image-container {
@@ -58,20 +83,20 @@ h1 {
 }
 
 #imagen1 {
-    background-color: rgb(131, 108, 169);
+    background-color: var(--clr-violet);
 }
 
 #imagen2 {
-    background-color: rgb(193, 88, 88);
+    background-color: var(--clr-red);
 }
 
 #imagen3 {
-    background-color: cyan;
+    background-color: var(--clr-blue);
 }
 
 
 .image-container h2 {
-    color: white;
+    color: var(--clr-white);
     justify-self: end;
     align-self: end;
 }
@@ -116,11 +141,14 @@ h1 {
 }
 
 .section2_2 h3 {
-    font-size: 2.5rem;
+    font-size: var(--fsz-m);
+    font-weight: var(--fsw-m);
 }
 
 .section2_2 p {
-    font-size: 1.2rem;
+    font-size: var(--fsz-s);
+    font-weight: var(--fsw-s);
+
 }
 
 .section2_2 {
@@ -128,18 +156,19 @@ h1 {
 }
 
 .section2_2 button {
-    background-color: rgb(193, 88, 88);
+    background-color: var(--clr-red);
     border-radius: 1.8rem;
     padding-block: 1.2rem;
     padding-inline: 3.2rem;
-    color: white;
-    border-color: rgb(193, 88, 88);
+    color: var(--clr-white);
+    border-color: var(--clr-red);
 }
 
 #work {
-    color: black;
+    color: var(--clr-black);
     text-align: center;
-    font-size: 2rem;
+    font-size: var(--fsz-m);
+    font-weight: var(--fsw-m);
 }
 
 .carrete {
